@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="profilepage">
+    <main>
+      <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-secondary profile_page"><b>CONTACT</b></a></li>
+            </ul>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-secondary my_name"><b>RAINA JAIN</b></a></li>
+            </ul>
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../logo.png" alt="" width="70" height="70" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="../main.html">Home</a></li>
+                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                <li><a class="dropdown-item" href="profile.html">Contact</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="aboutme.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- i added all the content of my navbar -->
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row vh-100 pt-5">
+          <div class="row">
+            <div class="insta col-lg-4 text-center">
+              <svg class="bd-placeholder-img rounded-circle" style="margin: 20px;" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image class="gram"
+                xlink:href="../instagram.png"
+                width="140" height="140"
+                clip-path="url(#circleView)"
+              />
+              </svg>
+              <!-- here, i added the images and made them in the shape of a circle using clip path -->
+      
+              <h2>Instagram</h2>
+              <p>@rainajain03</p>
+              <button class="btn font-poppins"> <a href="https://www.instagram.com/rainajain03/" class="a">Follow</a>
+              </a>
+              </button>
+              <!-- i also added the a button which would redirect to the respective account link -->
+            </div>
+            <div class="col-lg-4 text-center">
+              <svg class="bd-placeholder-img rounded-circle" style="margin: 20px;" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image
+                xlink:href="../mail.png"
+                width="140" height="140"
+                clip-path="url(#circleView)"
+              />
+              </svg>
+      
+              <h2>Mail</h2>
+              <p>rainajain003@gmail.com</p>
+              <button class="btn font-poppins"> <a href="https://mail.google.com/mail/u/0/#inbox" class="a">Message</a>
+              </a>
+              </button>
+            </div>
+            <div class="col-lg-4 text-center">
+              <svg class="bd-placeholder-img rounded-circle" style="margin: 20px;" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image
+                xlink:href="../linkedin.png"
+                width="140" height="140"
+                clip-path="url(#circleView)"/>
+              </svg>
+      
+              <h2>Linkedin</h2>
+              <p>Raina Jain</p>
+              <button class="btn font-poppins"> <a href="https://www.linkedin.com/in/raina-jain-9660a9212/" class="a">Connect</a>
+              </a>
+              </button>
+              <!-- i followed the same format for linkedin and mail. -->
+            </div>
+          </div><br>
+
+          <div class="form-container text-center">
+            <div class="header1">
+            <h1>Please reach out to me for any queries!</h1>
+          </div>
+             <form name="contactForm" method="post" onsubmit = "return validate()" action="#">
+               <label for="name">Name</label>
+               <input type="text" id="name" name="name" placeholder="Your name">
+               <span class="errors"></span><br>
+           
+               <label for="email">Email</label>
+               <input type="text" placeholder="Email address" id="email" name="email">
+               <span class="errors"></span><br>
+           
+               <label for="phone">Phone</label>
+               <input type="text" placeholder="Phone number" id="phone" name="phone">
+               <span class="errors"></span><br>
+               
+               <label for="subject">Message</label>
+               <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+               <span class="errors"></span><br>
+               <button type="submit" value="Submit">Submit</button>
+             </form>
+            <!-- contact form validation -->
+           </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
